@@ -1,0 +1,83 @@
+.next-btn {
+  position: relative;
+  display: flex;
+  width: max-content;
+
+  &__text {
+    width: max-content;
+    font-weight: 700;
+    margin-right: 2rem;
+  }
+
+  &__arrow {
+    display: block;
+    fill: #000;
+    width: 14rem;
+    height: 2rem;
+    padding-left: 0rem; //test
+  }
+
+  &__circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-35%);
+
+    width: 6rem;
+    height: 6rem;
+
+    border: 2px dashed#4A4A4A;
+    border-radius: 50%;
+    transition: all 0.4s;
+
+    &:hover {
+      border-color: #b3c743;
+      transform-origin: center;
+      transform: translateY(-35%) scale(1.2);
+    }
+
+    &:active {
+      transform: translateY(-35%) scale(0.3);
+    }
+  }
+}
+
+a {
+  outline: 0;
+}
+
+.tns-controls button {
+  position: relative;
+  // border: 2px solid #b3c743;
+  border: none;
+  outline: none;
+  // border-radius: 50%;
+  font-size: 2rem;
+  color: #000;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  background-color: transparent;
+  z-index: 100;
+
+  //to center
+  text-align: center;
+  vertical-align: middle;
+
+  &:first-child {
+    margin-right: 0.5rem;
+    animation: back-forth-reverse 1s ease-in-out infinite;
+  }
+
+  &:last-child {
+    animation: back-forth 1s ease-in-out infinite;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    margin-left: 2rem;
+  }
+}
+
+.tns-controls:focus {
+  outline: none;
+}

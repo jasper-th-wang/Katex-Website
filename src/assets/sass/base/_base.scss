@@ -1,0 +1,71 @@
+// Responsive Breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; // 600px
+
+:root {
+  --side-paddings: 15rem;
+
+  @media only screen and (max-width: 81.25em) {
+    --side-paddings: 8rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    --side-paddings: 2rem;
+  }
+}
+
+@mixin container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.u-para-with-adjacent-el {
+  margin-bottom: 5rem;
+}
+
+section {
+  margin-bottom: 16rem;
+
+  &:first-of-type {
+    margin-top: 16rem;
+  }
+}
+
+// reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 8px;
+  }
+  // use overflow-x in ios device, since it does not work there, but applying it
+  // in other browser break body-scroll lock
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    overflow-x: hidden;
+  }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+button {
+  &:focus,
+  &:active {
+    outline: none;
+    border: none;
+  }
+}

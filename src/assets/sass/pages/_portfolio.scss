@@ -1,0 +1,38 @@
+.portfolio {
+  position: relative;
+  &__container {
+    margin-bottom: 5rem;
+    padding: 0rem var(--side-paddings);
+    padding-top: 0;
+    position: relative;
+    @include container;
+  }
+
+  &__title {
+    font-size: 6rem;
+  }
+
+  &__content {
+    line-height: 1.7;
+    font-weight: 500;
+    width: 66rem;
+    @media only screen and (max-width: $bp-small) {
+      width: auto;
+    }
+  }
+
+  .dec-block {
+    display: block;
+    background-color: rgba(#c5d085, 0.8);
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 110rem;
+    bottom: 65rem;
+    // margin-left: auto;
+    // padding-top: 10rem;
+    width: 110rem;
+    height: 65rem;
+    z-index: -1;
+  }
+}

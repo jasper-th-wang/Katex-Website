@@ -1,0 +1,26 @@
+.worksmanship {
+  // height: 70vh;
+
+  &__container {
+    padding: 0rem var(--side-paddings);
+    @include container;
+  }
+
+  .dec-line {
+  }
+
+  &__title {
+  }
+
+  &__content {
+    margin-left: 33%;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-left: 20%;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-left: 0;
+    }
+  }
+}

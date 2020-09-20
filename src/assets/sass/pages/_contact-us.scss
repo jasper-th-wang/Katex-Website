@@ -1,0 +1,58 @@
+.contact-us {
+  overflow: hidden; //to hide contact form animation
+  margin-bottom: 0; // to reserve the box-shadow of the contact form (otherwise it gets cut out)
+  padding-top: 16rem; // the margin-top collapses so i need to use padding
+  padding-bottom: 16rem;
+  @media only screen and (max-width: $bp-large) {
+    //org 900
+    padding-top: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      //org 820
+      flex-direction: column-reverse;
+      width: 85vw;
+    }
+  }
+}
+
+.contact-info {
+  padding: 8rem 10rem;
+  align-self: flex-start;
+  flex: 1 1 auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    //1250 org
+    padding: 8rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    align-self: center;
+    padding-top: 0;
+  }
+  .big-logo {
+    width: 100%; //40rem;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 50rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 70vw;
+    }
+  }
+
+  &__content {
+    line-height: 1.7;
+    p:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+}

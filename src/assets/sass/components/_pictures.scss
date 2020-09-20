@@ -1,0 +1,9 @@
+.pictures {
+    &:not(.pre-animated) {
+        transition: transform 0.3s ease-in-out;
+    }
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+    }
+}

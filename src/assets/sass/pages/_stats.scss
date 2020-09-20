@@ -1,0 +1,39 @@
+.stats {
+  &__container {
+    padding: 0rem var(--side-paddings); //5
+    @include container;
+  }
+
+  .dec-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__cards {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    gap: 3rem;
+
+    @media only screen and (max-width: 1400px) {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

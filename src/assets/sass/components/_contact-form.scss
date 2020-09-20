@@ -1,0 +1,88 @@
+.contact-form {
+  font-family: "raleway", sans-serif;
+  // min-width: 60rem;
+  width: 100%;
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  padding: 8rem 10rem;
+  box-shadow: 5px 7px 10px rgba(#000, 0.4);
+  flex: 1 1 auto;
+
+  @media only screen and (max-width: $bp-medium) {
+    //org 820
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 8rem 7rem;
+  }
+
+  &__label {
+    font-size: 1.3rem;
+    display: block;
+    color: #fff;
+  }
+
+  &__input,
+  &__text-area {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d6d6d6;
+    width: 100%;
+    margin-bottom: 6rem;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #b3c743;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &__input,
+  &__text-area {
+    font-size: 1.8rem;
+    color: #fff;
+
+    &::placeholder {
+      font-family: "raleway", sans-serif;
+      font-size: 2rem;
+      color: #d6d6d6;
+    }
+  }
+
+  &__input {
+    height: 6rem;
+    margin-top: 1rem;
+  }
+
+  &__text-area {
+    height: 20rem;
+    margin-top: 1rem;
+    resize: none;
+  }
+
+  &__btn {
+    border-radius: 0;
+    border: none;
+    height: 8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.15s;
+
+    &:hover {
+      background-color: #b3c743;
+      color: #fff;
+    }
+
+    &:active,
+    &:focus {
+      transform: scale(0.95);
+    }
+  }
+}

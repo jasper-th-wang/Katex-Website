@@ -1,0 +1,50 @@
+.card {
+  position: relative;
+  width: 25rem;
+
+  &::before {
+    content: "";
+    background-color: #b3c743;
+    display: block;
+    position: absolute;
+    top: -1rem;
+    // left: 5rem;
+    right: 4rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: -1;
+    transition: all 0.4s ease-in;
+  }
+
+  &:hover::before {
+    transition: all 0.3s ease-in-out;
+    width: 22rem;
+    height: 15rem;
+  }
+
+  &__title {
+    display: inline-block;
+    color: #000;
+    padding-top: 5rem;
+    margin: 0;
+  }
+
+  &__content {
+    color: #000;
+  }
+
+  &__icon {
+    position: absolute;
+    font-size: 10.4rem; //104px
+    top: 0;
+    right: 5rem;
+    @media only screen and (max-width: $bp-largest) {
+      right: 2.8rem;
+    }
+  }
+
+  //for countUp js to not skip a line
+  .heading-1 {
+    display: inline-block;
+  }
+}
