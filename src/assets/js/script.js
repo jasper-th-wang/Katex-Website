@@ -110,7 +110,7 @@ const toggleDesktopMenu = () => {
 
 toggleDesktopMenu();
 
-isDesktop.addListener(toggleDesktopMenu);
+isDesktop.addEventListener('change', toggleDesktopMenu);
 
 
 // Slide-in observer
