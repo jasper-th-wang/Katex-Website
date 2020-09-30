@@ -143,3 +143,13 @@
     }
   }
 }
+
+:lang(zh) {
+  .experience {
+    &__content {
+      @media only screen and (max-width: $bp-largest) {
+        width: 50rem;
+      }
+    }
+  }
+}

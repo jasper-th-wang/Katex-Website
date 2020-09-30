@@ -5,6 +5,7 @@ import { tns } from '../../../node_modules/tiny-slider/src/tiny-slider';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import '../sass/main.scss';
 
+
 // Carousel
 
 const aboutUsSlider = tns({

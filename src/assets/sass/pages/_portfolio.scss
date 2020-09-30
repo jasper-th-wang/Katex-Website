@@ -36,3 +36,13 @@
     z-index: -1;
   }
 }
+
+:lang(zh) {
+  .portfolio {
+    &__content {
+      @media only screen and (max-width: $bp-largest) {
+        width: 70rem;
+      }
+    }
+  }
+}
