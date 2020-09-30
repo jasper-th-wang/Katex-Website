@@ -118,7 +118,7 @@
 
         &.mobile-menu-active {
           visibility: visible;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, calc(-50% + 4rem));
           opacity: 1;
         }
 

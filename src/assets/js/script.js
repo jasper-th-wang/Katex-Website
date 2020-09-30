@@ -271,7 +271,7 @@ const isMobileContactUs = window.matchMedia('(max-width: 900px)');
 const scroll = new SmoothScroll('a[href*="#"]', {
   header: '.navigation',
   speed: 500,
-  durationMin: 1000,
+  durationMin: 1500,
   offset: function (anchor, toggle) {
     if ((toggle.id === 'nav-contact-us') && isMobileContactUs.matches) {
       return -5;
