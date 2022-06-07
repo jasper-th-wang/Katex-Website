@@ -38,8 +38,21 @@
     font-size: 10.4rem; //104px
     top: 0;
     right: 5rem;
+
     @media only screen and (max-width: $bp-largest) {
       right: 2.8rem;
+    }
+
+    &--push-right {
+      right: 3rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        right: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        right: 3rem;
+      }
     }
   }
 

@@ -55,10 +55,10 @@ const gallerySlider = tns({
 });
 
 // Initializing Count up
-const countUp250 = new CountUp('250', 250, { duration: 3 });
-const countUp40 = new CountUp('40', 40, { duration: 3 });
-const countUp23k = new CountUp('23k', 23, { duration: 3 });
-const countUp130k = new CountUp('130k', 130, { duration: 3 });
+const countUpWorkers = new CountUp('count-up-workers', 500, { duration: 3 });
+const countUpExperience = new CountUp('count-up-experience', 50, { duration: 3 });
+const countUpProdBase = new CountUp('count-up-prod-base', 138, { duration: 3 });
+const countUpMonthlyCap = new CountUp('count-up-monthly-cap', 780, { duration: 3 });
 
 const statsSec = document.querySelector('.stats__cards');
 const statsOptions = {
@@ -71,10 +71,10 @@ const statsCountUp = new IntersectionObserver(function (entries, statsCountUp) {
     if (!entry.isIntersecting) {
       return;
     }
-    countUp250.start();
-    countUp40.start();
-    countUp23k.start();
-    countUp130k.start();
+    countUpWorkers.start();
+    countUpExperience.start();
+    countUpProdBase.start();
+    countUpMonthlyCap.start();
     statsCountUp.unobserve(entry.target);
 
 
