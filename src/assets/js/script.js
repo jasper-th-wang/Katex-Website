@@ -1,6 +1,6 @@
 import { CountUp } from 'countup.js';
 import SmoothScroll from 'smooth-scroll';
-import { tns } from '../../../node_modules/tiny-slider/src/tiny-slider';
+import { tns } from 'tiny-slider/src/tiny-slider';
 import animateDesktopNav from './animateDesktopNav';
 import animateMobileNav from './animateMobileNav';
 import animateScroll from './animateScroll';

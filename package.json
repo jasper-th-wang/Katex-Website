@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass src/assets/sass/main.scss src/assets/css/style.css --watch",
-    "dev": "parcel src/index.html",
-    "prod": "parcel build src/index.html src/zh.html"
+    "dev": "vite",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +18,6 @@
     "tiny-slider": "^2.9.3"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "vite": "^8.2.2"
   }
 }
