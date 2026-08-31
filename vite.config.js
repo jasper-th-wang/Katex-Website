@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: '/Katex-Website/',
   root: 'src',
   appType: 'mpa',
   server: {
