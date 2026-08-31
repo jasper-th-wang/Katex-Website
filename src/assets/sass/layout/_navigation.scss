@@ -56,11 +56,11 @@
   &__logo {
     width: 18rem;
     height: 6rem;
-    background-image: url(../../images/katex-logo-white-cropped.png);
+    background-image: url('/images/katex-logo-white-cropped.png');
     background-size: 100% 100%;
 
     &--scrolled {
-      background-image: url(../../images/katex-logo-black-cropped.png);
+      background-image: url('/images/katex-logo-black-cropped.png');
     }
   }
 
